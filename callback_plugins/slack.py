@@ -33,7 +33,7 @@ class CallbackModule(CallbackBase):
     CALLBACK_VERSION = 2.0
     CALLBACK_TYPE = 'notification'
     CALLBACK_NAME = 'slack_on_fail'
-    CALLBACK_NEEDS_WHITELIST = True
+    CALLBACK_NEEDS_WHITELIST = False
 
     def __init__(self, display=None):
 
