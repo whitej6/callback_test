@@ -44,5 +44,5 @@ class CallbackModule(CallbackBase):
         slack configuration"""
         self.play = play
         self.extra_vars = self.play.get_variable_manager().extra_vars
-        display.vvvv(self.extra_vars)
+        display.vvvv(os.environ)
 
