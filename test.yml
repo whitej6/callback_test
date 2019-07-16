@@ -5,4 +5,4 @@
 
   tasks:
     - debug:
-        msg: "test"
+        msg: "{{ foo }}"
