@@ -43,6 +43,7 @@ class CallbackModule(CallbackBase):
         """Parse out extra_vars to be used to for dynamically assigning 
         slack configuration"""
         self.play = play
-        self.extra_vars = self.play.get_variable_manager()
-        display.vvvv(self.extra_vars)
-
+        self.extra_vars = self.play.get_variable_manager().extra_vars
+        #display.vvvv(self.extra_vars)
+        self._display.warning(str(self.extra_vars))
+        self._display.warning(str(os.environ))
