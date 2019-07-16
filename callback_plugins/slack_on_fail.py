@@ -45,5 +45,5 @@ class CallbackModule(CallbackBase):
         self.play = play
         self.extra_vars = self.play.get_variable_manager().extra_vars
         #display.vvvv(self.extra_vars)
-        self._display.debug(str(self.extra_vars))
-        self._display.debug(str(os.environ))
+        display.vvvv(str(self.extra_vars))
+        display.vvvv(str(os.environ))
