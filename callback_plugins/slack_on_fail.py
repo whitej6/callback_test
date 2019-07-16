@@ -45,5 +45,5 @@ class CallbackModule(CallbackBase):
         self.play = play
         self.extra_vars = self.play.get_variable_manager().extra_vars
         #display.vvvv(self.extra_vars)
-        display.vvvv('Job ID:')
-        display.vvvv(str(os.environ.get('JOB_ID')))
+        #display.vvvv('Job ID:')
+        display.vvvv(os.environ)
