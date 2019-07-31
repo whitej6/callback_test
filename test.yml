@@ -1,6 +1,6 @@
 ---
 - name: "test callback"
-  hosts: localhost
+  hosts: localhost1
   gather_facts: no
 
   tasks:
